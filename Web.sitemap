@@ -1,0 +1,60 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<siteMap xmlns="http://pun-kpmg-qa:81" >
+  <siteMapNode url="Default.aspx" title="Home"  description="Home Page">
+    <siteMapNode url="UserList.aspx" title="User List"  description="List of Users" >
+      <siteMapNode url="UserDetails.aspx" title="User Details"  description="User Details" />
+      <siteMapNode url="UserGroupRoleDetails.aspx" title="UserGroupRole  List"  description="List of UserGroupRole" >
+      </siteMapNode>
+    </siteMapNode>
+    <siteMapNode url="RoleList.aspx" title="Role List"  description="List of Roles" >
+      <siteMapNode url="RoleDetails.aspx" title="Role Details"  description="Role Details" />
+    </siteMapNode>
+    <siteMapNode url="GroupList.aspx" title="Group List"  description="List of Groups" >
+      <siteMapNode url="GroupDetails.aspx" title="Group Details"  description="Group Details" />
+    </siteMapNode>
+    <siteMapNode url="GroupRoleList.aspx" title="GroupRole List"  description="List of GroupRole" >
+      <siteMapNode url="GroupRoleDetails.aspx" title="GroupRole Details"  description="GroupRole Details" />
+    </siteMapNode>
+    <siteMapNode url="MenuList.aspx" title="Menu List"  description="List of Menu" >
+      <siteMapNode url="MenuDetails.aspx" title="menu Details"  description="Menu Details" />
+    </siteMapNode>
+    <siteMapNode url="SubMenuList.aspx" title="SubMenu List"  description="List of SubMenu" >
+      <siteMapNode url="SubMenuDetails.aspx" title="SubMenu Details"  description="SubMenu Details" />
+    </siteMapNode>
+
+    <siteMapNode url="ShowRecordsProgram.aspx" title="ScopeDocument Program List"  description="List of Program Scope type" >
+      <siteMapNode url="ScopeDocumentProgram.aspx" title="ScopeDocument Program Details"  description="ScopeDocument Program Details" />
+    </siteMapNode>
+    <siteMapNode url="ShowRecordsCourses.aspx" title="ScopeDocument Courses List"  description="List of Courses Scope type" >
+      <siteMapNode url="ScopeDocumentCourses.aspx" title="ScopeDocument Courses Details"  description="ScopeDocument Courses Details" />
+    </siteMapNode>
+    <siteMapNode url="ShowRecordsStandalone.aspx" title="ScopeDocument Standalone List"  description="List of Standalone Scope type" >
+      <siteMapNode url="ScopeDocumentStandalone.aspx" title="ScopeDocument Standalone Details"  description="ScopeDocument Standalone Details" />
+    </siteMapNode>
+    <siteMapNode url="ShowRecordsSuggestedChange.aspx" title="Suggested Change List"  description="List of Suggested Change" >
+      <siteMapNode url="SuggestedChange.aspx" title="Suggested Change Details"  description="SuggestedChange Details" />
+    </siteMapNode>
+    <siteMapNode url="ContentDeveloper.aspx" title="Content Developer List"  description="List of ContentDeveloper" >
+    </siteMapNode>
+    <siteMapNode url="Vendor.aspx" title="Vendor List"  description="List of Vendors" >     
+    </siteMapNode>
+    <siteMapNode url="ContentLead.aspx" title="Content Lead List"  description="List of ContentLead" >
+    </siteMapNode>
+    <siteMapNode url="InstructionalDesigner.aspx" title="Instructional Designer List"  description="List of InstructionalDesigner" >
+    </siteMapNode>
+    <siteMapNode url="Stakeholder.aspx" title="Stakeholder List"  description="List of Stakeholder" >
+    </siteMapNode>
+    <siteMapNode url="StakeholderRelationshipManager.aspx" title="Stakeholder RelationshipManager List"  description="List of StakeholderRelationshipManager" >
+    </siteMapNode>
+    <siteMapNode url="PortfolioManager.aspx" title="Portfolio Manager List"  description="List of PortfolioManager" >
+    </siteMapNode>
+    <siteMapNode url="ProgramLead.aspx" title="Program Lead  List"  description="List of ProgramLead" >
+    </siteMapNode>
+        
+    <siteMapNode url="IntakeList.aspx" title="IntakeForm  List"  description="List of IntakeForm" >
+      <siteMapNode url="IntakeForm.aspx" title="IntakeForm"  description="IntakeForm" />
+    </siteMapNode>
+    <siteMapNode url="GroupRolePerdetails.aspx" title="GroupRolePermission List"  description="List of GroupRolePermission" >
+    </siteMapNode>
+  </siteMapNode>
+</siteMap>
