@@ -125,33 +125,34 @@
                                     <div style="width: 90%; height: 450px; overflow: auto;">
                                         <asp:GridView ID="grdShowRecordsScope" runat="server" AutoGenerateColumns="False"
                                             Width="100%">
+                                             <HeaderStyle HorizontalAlign ="Center" />
                                             <Columns>
-                                                <asp:TemplateField HeaderText="DH ID#">
+                                                <asp:TemplateField HeaderText="DH ID#" ItemStyle-HorizontalAlign ="Center">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblDHID" runat="server" Text='<%# Eval("DH ID#") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Training Need Name">
+                                                <asp:TemplateField HeaderText="Training Need Name" ItemStyle-HorizontalAlign ="Left">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblTraNeeNam" runat="server" Text='<%# Eval("Training Need Name") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Course/Program Title">
+                                                <asp:TemplateField HeaderText="Course/Program Title" ItemStyle-HorizontalAlign ="Left">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblCouTit" runat="server" Text='<%# Eval("Course/Program Title") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Portfolio Manager">
+                                                <asp:TemplateField HeaderText="Portfolio Manager" ItemStyle-HorizontalAlign ="Left">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblPortMana" runat="server" Text='<%# Eval("Portfolio Manager") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Statckeholder Relationship Manager">
+                                                <asp:TemplateField HeaderText="Statckeholder Relationship Manager" ItemStyle-HorizontalAlign ="Left">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSRM" runat="server" Text='<%# Eval("Statckeholder Relationship Manager") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Edit">
+                                                <asp:TemplateField HeaderText="Edit" ItemStyle-HorizontalAlign ="Center">
                                                     <ItemTemplate>
                                                         <asp:ImageButton ID="imbEdit" runat="server" ImageUrl="~/images/imgEditIcon.png"
                                                             ToolTip="Edit Scope Document Program" OnClick="imbEdit_Click" />

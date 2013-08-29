@@ -36,8 +36,7 @@ Default skin template. The following skins are provided as examples only.
    <asp:Panel runat="server"  CssClass="ModalPopupBG1"   SkinID="loadernew"></asp:panel>
    <asp:Panel runat="server"  CssClass="loader"   SkinID="loaderpan"></asp:panel>
      <asp:Panel runat="server"  CssClass="msg"   SkinID="msgshow"></asp:panel>
-<asp:ValidatorCalloutExtender WarningIconImageUrl="~/images/imgWarningIcon.png" CloseImageUrl="~/images/imgDeleteIcon.png" CssClass="customCalloutStyle" runat="server" >
-                                                                             </asp:ValidatorCalloutExtender>
+<asp:ValidatorCalloutExtender WarningIconImageUrl="~/images/imgWarningIcon.png" CloseImageUrl="~/images/imgDeleteIcon.png" CssClass="customCalloutStyle" runat="server" ></asp:ValidatorCalloutExtender>
      <asp:panel runat="server"  CssClass="pnlCSS"   SkinID="PNEC"></asp:panel> 
       <asp:Panel runat="server"  CssClass="pnfix"   SkinID="FixedPan"></asp:panel>
 

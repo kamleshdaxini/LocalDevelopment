@@ -127,8 +127,9 @@
                                 <td align="center" valign="top" colspan="2">
                                     <div style="width: 90%; height: 450px; overflow: auto;">
                                         <asp:GridView ID="GrdSuggestedChangeSR" runat="server" Width="100%" AutoGenerateColumns="False">
+                                         <HeaderStyle HorizontalAlign ="Center" />
                                             <Columns>
-                                                <asp:TemplateField HeaderText="Sr. No.">
+                                                <asp:TemplateField HeaderText="Sr. No." ItemStyle-HorizontalAlign ="Center">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSrNo" runat="server" Text='<%# Container.DataItemIndex + 1 %>'></asp:Label>
                                                     </ItemTemplate>
@@ -138,22 +139,22 @@
                                                         <asp:Label ID="lblSuggID" runat="server" Text='<%# Eval("ID") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Suggested Change Title">
+                                                <asp:TemplateField HeaderText="Suggested Change Title" ItemStyle-HorizontalAlign ="Left">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSuggChanTitle" runat="server" Text='<%# Eval("Suggested Change Title") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Suggested Change Date">
+                                                <asp:TemplateField HeaderText="Suggested Change Date" ItemStyle-HorizontalAlign ="Left">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSuggChanDate" runat="server" Text='<%# Eval("Suggested Change Date") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Status">
+                                                <asp:TemplateField HeaderText="Status" ItemStyle-HorizontalAlign ="Center">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblStatus" runat="server" Text='<%# Eval("Status") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Edit">
+                                                <asp:TemplateField HeaderText="Edit" ItemStyle-HorizontalAlign ="Center">
                                                     <ItemTemplate>
                                                         <asp:ImageButton ID="imbEdit" runat="server" ImageUrl="~/images/imgEditIcon.png"
                                                             ToolTip="Edit Scope Document Program" OnClick="imbEdit_Click" />

@@ -129,13 +129,14 @@
                                         <asp:GridView ID="grdSubMenuDetails" runat="server" AutoGenerateColumns="False" Width="100%"
                                             AllowPaging="True" OnPageIndexChanging="grdSubMenuDetails_PageIndexChanging">
                                             <PagerSettings PageButtonCount="10" />
+                                              <HeaderStyle HorizontalAlign ="Center" />
                                             <Columns>
                                                 <asp:TemplateField HeaderText="SubMenu ID" Visible="False">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSuMeID" runat="server" Text='<%# Eval("SubMenuId") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Sr. No.">
+                                                <asp:TemplateField HeaderText="Sr. No." ItemStyle-HorizontalAlign="Center">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSrNoSub" runat="server" Text="<%# Container.DataItemIndex + 1 %>"></asp:Label>
                                                     </ItemTemplate>
@@ -170,7 +171,7 @@
                                                     </ItemTemplate>
                                                     <ItemStyle HorizontalAlign="Left" />
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Status">
+                                                <asp:TemplateField HeaderText="Status" ItemStyle-HorizontalAlign="Center">
                                                     <HeaderTemplate>
                                                         <asp:LinkButton ID="lnkSMStatus" runat="server" Text="Status" ForeColor="White" OnClick="lnkSMStatus_Click"></asp:LinkButton>
                                                     </HeaderTemplate>
@@ -178,7 +179,7 @@
                                                         <asp:Label ID="lblIsActive" runat="server" CssClass='<%# Eval("IsActive") %>' Text='<%# Eval("IsActive") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Edit">
+                                                <asp:TemplateField HeaderText="Edit" ItemStyle-HorizontalAlign="Center">
                                                     <ItemTemplate >
                                                         <%--   <asp:LinkButton ID="lnkEdit" runat="server" CommandArgument='<%# Eval("SubMenuId") %>'
                                                             OnClick="lnkEdit_Click">Edit</asp:LinkButton>

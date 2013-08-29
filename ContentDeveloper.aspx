@@ -106,10 +106,10 @@
                                 <td align="center" valign="top" colspan="2">
                                     <div style="width: 90%; height: 450px; overflow: auto; text-align: left;">
                                         <asp:GridView ID="GrdContentDeveloper" runat="server" AutoGenerateColumns="False"
-                                            Width="100%" AllowPaging="True" AllowSorting="True" onpageindexchanging="GrdContentDeveloper_PageIndexChanging1" 
-                                          >
+                                            Width="100%" AllowPaging="True" AllowSorting="True" onpageindexchanging="GrdContentDeveloper_PageIndexChanging1" >
+                                            <HeaderStyle HorizontalAlign ="Center" />
                                             <Columns>
-                                                <asp:TemplateField HeaderText="Sr. No." ItemStyle-HorizontalAlign="Center">
+                                                <asp:TemplateField HeaderText="Sr. No." ItemStyle-HorizontalAlign="Center" HeaderStyle-Width ="50px">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSrNo" runat="server" Text='<%# Container.DataItemIndex + 1 %>'></asp:Label>
                                                     </ItemTemplate>

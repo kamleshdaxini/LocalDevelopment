@@ -27,20 +27,25 @@ public class Login
     /// </summary>
     /// <returns></returns>
     public String Start()
-    {              
-/*       
- // To find current machine username
-        string UserName = HttpContext.Current.User.Identity.Name.ToString();
-        // To slite username by two back slashes
-        UserName = Regex.Replace(UserName, @"\\", @"\\");
-        // for seperarion
-        string[] Separator = new string[] { "\\" };
-        // To split username
-        string[] StrSplitArr = UserName.Split(Separator, StringSplitOptions.RemoveEmptyEntries);
-        //To save Loginusername       
-        LoginUserName = StrSplitArr[1].ToString();
-        // To get details of logged in user
-*/
+    {
+
+        // To find current machine username
+        //string UserName = HttpContext.Current.User.Identity.Name.ToString();
+        //// To slite username by two back slashes
+        //UserName = Regex.Replace(UserName, @"\\", @"\\");
+        //// for seperarion
+        //string[] Separator = new string[] { "\\" };
+        //// To split username
+        //string[] StrSplitArr = UserName.Split(Separator, StringSplitOptions.RemoveEmptyEntries);
+        //// To save Loginusername       
+        //LoginUserName = StrSplitArr[1].ToString();
+        //  To get details of logged in user
+        //System.Security.Principal.WindowsIdentity username = System.Security.Principal.WindowsIdentity.GetCurrent();
+        //LoginUserName = username.Name;
+        //string[] separator = new string[] { "\\" };
+        //string[] strSplitArr = username.Name.Split(separator, StringSplitOptions.RemoveEmptyEntries);
+        //LoginUserName = strSplitArr[1].ToString();
+        //getUserDetails();
         GetUserDetails();     
         //To check logged in user is valid or not
         if (ValidUser == "Yes")

@@ -5,7 +5,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="cntplh" runat="Server">
     <asp:UpdatePanel ID="upnl" runat="server">
-     <Triggers>
+        <Triggers>
             <asp:PostBackTrigger ControlID="imbConLeadHelp" />
         </Triggers>
         <ContentTemplate>
@@ -15,11 +15,12 @@
                     <td valign="top">
                         <table align="center" width="100%">
                             <tr>
-                                <td colspan ="2">
+                                <td colspan="2">
                                     <asp:Label ID="lblSelectID" runat="server" Visible="False"></asp:Label>
                                 </td>
-                                 <td align="center" >
-                                    <asp:ImageButton ID="imbConLeadHelp" runat="server" ImageUrl="~/images/imgHelpIcon.png" OnClick="imbConLeadHelp_Click" Style="width: 26px" />
+                                <td align="center">
+                                    <asp:ImageButton ID="imbConLeadHelp" runat="server" ImageUrl="~/images/imgHelpIcon.png"
+                                        OnClick="imbConLeadHelp_Click" Style="width: 26px" />
                                 </td>
                             </tr>
                             <tr>
@@ -50,8 +51,7 @@
                                                             <td>
                                                                 <asp:CompareValidator ID="cvOpe" runat="server" ControlToValidate="ddlOpe" Display="None"
                                                                     ErrorMessage="Select Operator" Operator="NotEqual" ValidationGroup="CL" ValueToCompare="Select Operator"></asp:CompareValidator>
-                                                                <asp:ValidatorCalloutExtender ID="vceOpe" runat="server"
-                                                                    TargetControlID="cvOpe">
+                                                                <asp:ValidatorCalloutExtender ID="vceOpe" runat="server" TargetControlID="cvOpe">
                                                                 </asp:ValidatorCalloutExtender>
                                                             </td>
                                                         </tr>
@@ -76,14 +76,13 @@
                                                                     <asp:ListItem Text="InActive" Value="InActive"></asp:ListItem>
                                                                 </asp:DropDownList>
                                                             </td>
-                                                            <td align="left" width="10%" valign ="top" >
+                                                            <td align="left" width="10%" valign="top">
                                                                 <asp:ImageButton ID="imbSearch" runat="server" OnClick="imbSearch_Click" ValidationGroup="CL"
                                                                     ImageUrl="~/images/imgSearchIcon.png" ToolTip="Search" />
                                                             </td>
                                                             <td>
-                                                                <asp:ImageButton ID="imbRef" runat="server" 
-                                                                    ImageUrl="~/images/imgRefreshIcon.png" OnClick="imbRef_Click" 
-                                                                    ToolTip="Refresh" />
+                                                                <asp:ImageButton ID="imbRef" runat="server" ImageUrl="~/images/imgRefreshIcon.png"
+                                                                    OnClick="imbRef_Click" ToolTip="Refresh" />
                                                             </td>
                                                         </tr>
                                                     </table>
@@ -99,17 +98,17 @@
                                 </td>
                                 <td align="right" valign="top" width="6%">
                                 </td>
-                                  <td align="right" valign="top" width="6%">
+                                <td align="right" valign="top" width="6%">
                                 </td>
                             </tr>
                             <tr>
                                 <td align="center" valign="top" colspan="2">
                                     <div style="width: 90%; height: 450px; overflow: auto; text-align: left;">
-                                        <asp:GridView ID="GrdContentLead" runat="server" AutoGenerateColumns="False" 
-                                            Width="100%" AllowPaging="True" AllowSorting="True" 
-                                            onpageindexchanging="GrdContentLead_PageIndexChanging">
+                                        <asp:GridView ID="GrdContentLead" runat="server" AutoGenerateColumns="False" Width="100%"
+                                            AllowPaging="True" AllowSorting="True" OnPageIndexChanging="GrdContentLead_PageIndexChanging">
+                                              <HeaderStyle HorizontalAlign ="Center" />
                                             <Columns>
-                                                <asp:TemplateField HeaderText="Sr. No.">
+                                                <asp:TemplateField HeaderText="Sr. No." ItemStyle-HorizontalAlign="Center" HeaderStyle-Width="70px">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSrNo" runat="server" Text='<%# Container.DataItemIndex + 1 %>'></asp:Label>
                                                     </ItemTemplate>
@@ -123,7 +122,7 @@
                                                         <asp:Label ID="lblUser" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Status">
+                                                <asp:TemplateField HeaderText="Status" ItemStyle-HorizontalAlign="Center">
                                                     <HeaderTemplate>
                                                         <asp:LinkButton ID="lnkStatus" runat="server" Text="Status" ForeColor="White" OnClick="lnkStatus_Click"></asp:LinkButton>
                                                     </HeaderTemplate>
@@ -131,7 +130,7 @@
                                                         <asp:Label ID="lnkStatus" runat="server" Text='<%# Eval("IsActive") %>' CssClass='<%# Eval("IsActive") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField>
+                                                <asp:TemplateField ItemStyle-HorizontalAlign="Center">
                                                     <ItemTemplate>
                                                         <asp:LinkButton ID="lnkEdit" runat="server" CommandArgument='<%# Eval("ContentLeadId") %>'
                                                             OnClick="lnkEdit_Click">Activate/Deactivate</asp:LinkButton>
@@ -158,7 +157,8 @@
                 </tr>
                 <tr>
                     <td>
-                        <asp:Panel ID="pnlContentLead" runat="server" Width="400px" align="center" Height="250px" SkinID="popuppan">
+                        <asp:Panel ID="pnlContentLead" runat="server" Width="400px" align="center" Height="250px"
+                            SkinID="popuppan">
                             <table width="100%" cellpadding="6" cellspacing="6">
                                 <tr>
                                     <td colspan="2" align="right">
@@ -204,7 +204,8 @@
                                         <asp:CompareValidator ID="cvConLeadUser" runat="server" Operator="NotEqual" ErrorMessage="Select User"
                                             ValidationGroup="Content" Display="None" ValueToCompare="&lt;&lt; Select &gt;&gt;"
                                             ControlToValidate="ddlConLeadUser"></asp:CompareValidator>
-                                        <asp:ValidatorCalloutExtender ID="vceConLeadUser" TargetControlID="cvConLeadUser" runat="server">
+                                        <asp:ValidatorCalloutExtender ID="vceConLeadUser" TargetControlID="cvConLeadUser"
+                                            runat="server">
                                         </asp:ValidatorCalloutExtender>
                                     </td>
                                 </tr>

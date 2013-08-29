@@ -106,8 +106,9 @@
                                     <div style="width: 90%; height: 450px; overflow: auto; text-align: left;">
                                         <asp:GridView ID="GrdProgramLead" runat="server" AutoGenerateColumns="False" Width="100%"
                                             AllowPaging="True" AllowSorting="True" OnPageIndexChanging="GrdProgramLead_PageIndexChanging">
+                                              <HeaderStyle HorizontalAlign ="Center" />
                                             <Columns>
-                                                <asp:TemplateField HeaderText="Sr. No.">
+                                                <asp:TemplateField HeaderText="Sr. No." ItemStyle-HorizontalAlign="Center" HeaderStyle-Width ="70px">
                                                     <ItemTemplate>
                                                         <asp:Label ID="lblSrNo" runat="server" Text='<%# Container.DataItemIndex + 1 %>'></asp:Label>
                                                     </ItemTemplate>
@@ -121,7 +122,7 @@
                                                         <asp:Label ID="lblUser" runat="server" Text='<%# Eval("Name") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField HeaderText="Status">
+                                                <asp:TemplateField HeaderText="Status" ItemStyle-HorizontalAlign="Center">
                                                     <HeaderTemplate>
                                                         <asp:LinkButton ID="lnkStatus" runat="server" Text="Status" ForeColor="White" OnClick="lnkStatus_Click"></asp:LinkButton>
                                                     </HeaderTemplate>
@@ -129,7 +130,7 @@
                                                         <asp:Label ID="lnkStatus" runat="server" Text='<%# Eval("IsActive") %>' CssClass='<%# Eval("IsActive") %>'></asp:Label>
                                                     </ItemTemplate>
                                                 </asp:TemplateField>
-                                                <asp:TemplateField>
+                                                <asp:TemplateField ItemStyle-HorizontalAlign="Center">
                                                     <ItemTemplate>
                                                         <asp:LinkButton ID="lnkEdit" runat="server" CommandArgument='<%# Eval("ProgramLeadId") %>'
                                                             OnClick="lnkEdit_Click">Activate/Deactivate</asp:LinkButton>

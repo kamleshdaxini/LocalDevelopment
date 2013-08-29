@@ -102,14 +102,14 @@ fieldset {
     border: 1px solid #174760;
     box-shadow: 2px 2px 2px 2px;
     background-color: #EfF2FA;
-    visibility:hidden;
+   
 }
 
 .ModalPopupBG {
     background-color: Black;
     filter: alpha(opacity=90);
     opacity: 0.8;
-     visibility:hidden;
+    
 }
 
 .ModalPopupBG1 {
@@ -118,7 +118,7 @@ fieldset {
     opacity: 0.8;
     width: 100%;
     height: 100%;
-    visibility:hidden;
+   
 }
 
 .modalPopup {
@@ -133,7 +133,7 @@ fieldset {
     height: 500px;
     width: 850px;
     border-radius: 10px;
-     visibility:hidden;
+    
 }
 
 .close {
